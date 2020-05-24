@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta name="description" content="CSS Tabs"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>COVID-19 analysis for USA</title>
+    <meta charset=utf-8>
+</head>
+<body>
+<div class="tabbed">
+    <input type="radio" name="tabs" id="tab-nav-1" checked>
+    <label for="tab-nav-1">Introduction</label>
+    <input type="radio" name="tabs" id="tab-nav-2">
+    <label for="tab-nav-2">US states</label>
+    <input type="radio" name="tabs" id="tab-nav-3">
+    <label for="tab-nav-3">USA vs World</label>
+    <input type="radio" name="tabs" id="tab-nav-4">
+    <label for="tab-nav-4">Extras</label>
+    <div class="tabs">
+        <div>
+            <h2>Confirmed cases over time</h2>
+            <iframe id="igraph0_1" style="border:none;" src='../plots/cumulative_casualities_covid19_usa.html', height="80%", width="100%"></iframe>
+            <h2>Daily statistics</h2>
+            <iframe id="igraph0_1" style="border:none;" src='../plots/daily_casualities_covid19_usa.html', height="80%", width="100%"></iframe>
+        </div>
+        <div>
+            <h2>How number of cases have changed over time?</h2>
+            <iframe id="igraph1_1" style="border:none;" src='../plots/usa_map_cases.html', height="50%", width="100%"></iframe>
+            <h2>Mortality..</h2>
+            <iframe id="igraph1_1" style="border:none;" src='../plots/usa_cases_deaths.html', height="50%", width="100%"></iframe>
+            <h2>How mortality has changed over time?</h2>
+            <iframe id="igraph1_2" style="border:none;" src='../plots/usa_cases_deaths_animation.html', height="50%", width="100%"></iframe>
+            <h2>How many people have been diagnosed?</h2>
+            <iframe id="igraph1_3" style="border:none;" src='../plots/usa_tests.html', height="50%", width="100%"></iframe>
+        </div>
+        <div>
+            <iframe id="igraph2_1" style="border:none;" src='../plots/total_infection_cases_covid19_worldwide_with_world.html', height="50%", width="100%"></iframe>
+            <iframe id="igraph2_2" style="border:none;" src='../plots/new_infection_cases_covid19_worldwide_with_world.html', height="50%", width="100%"></iframe>
+            <iframe id="igraph2_3" style="border:none;" src='../plots/total_deaths_covid19_worldwide_with_world.html', height="50%", width="100%"></iframe>
+            <iframe id="igraph2_4" style="border:none;" src='../plots/new_deaths_covid19_worldwide_with_world.html', height="50%", width="100%"></iframe>
+        </div>
+        <div>
+            <h2>Extras</h2>
+            <iframe id="igraph3_0" style="border:none;" src='../plots/deaths_causes_from_2017_usa.html, height="50%", width="100%"></iframe>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+</body>
+</html>
